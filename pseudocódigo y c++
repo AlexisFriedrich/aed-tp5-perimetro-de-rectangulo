@@ -1,0 +1,30 @@
+/*perimetro de rectangulo
+*Alexis Friedrich
+*11/05/2015
+*/
+#include <iostream>
+using namespace std;
+double getnumeropositivo();
+double getperimetro(double,double);               //el pseudocodigo está en la descripcion                 
+int main ()
+{
+double b=getnumeropositivo ();
+double h=getnumeropositivo ();
+cout<<getperimetro(h,b)<<endl;
+}
+
+double getnumeropositivo ()
+{double a;
+cout<<"ingrese numero positivo"<<endl;
+cin>>a;
+while (a<=0)
+	{cout<<"ingrese numero positivo"<<endl;
+	cin>>a;
+	}
+return a;
+}
+
+double getperimetro(double b,double h)
+{
+return (b+b+h+h);
+}
